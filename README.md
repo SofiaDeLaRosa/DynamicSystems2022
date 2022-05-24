@@ -21,7 +21,10 @@ Second Exam of the Dynamic Systems 2022-2 class, taught by [Dr. Victor de la Luz
 
  ## Requeriments
  
- ## 
+ ## Running
+ 
+ ## Results
+ [FractalCuadrado](https://user-images.githubusercontent.com/100147009/169947152-abc18677-1b63-491b-a73e-3fc3b2a45fd8.png)
  
  ## References 
  
