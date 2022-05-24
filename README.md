@@ -11,4 +11,22 @@ Second Exam of the Dynamic Systems 2022-2 class, taught by [Dr. Victor de la Luz
  A [fractal](https://fractalfoundation.org/resources/what-are-fractals/) is a mathematical structure that describes an infinite perimeter in a finite area.
  
  ## Metodology
- Using 
+ We drew a fractal in shape of square with iterations.
+ 
+ [Toolset:
+
+- [NumPy](https://numpy.org/)
+
+- [Matplotlib](https://matplotlib.org/)
+
+ ## Requeriments
+ 
+ ## 
+ 
+ ## References 
+ 
+Jane Hawkins, Ergodic
+Dynamics
+
+https://link.springer.com/content/pdf/10.1007%2F978-3-030-59242-4.pdf
+https://fractalfoundation.org/resources/what-are-fractals/
