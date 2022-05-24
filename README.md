@@ -11,9 +11,9 @@ Second Exam of the Dynamic Systems 2022-2 class, taught by [Dr. Victor de la Luz
  A [fractal](https://fractalfoundation.org/resources/what-are-fractals/) is a mathematical structure that describes an infinite perimeter in a finite area.
  
  ## Metodology
- We drew a fractal in shape of square with iterations.
+ We drew a fractal in shape of square with iterations. That
  
- [Toolset:
+ Toolset:
 
 - [NumPy](https://numpy.org/)
 
@@ -21,9 +21,16 @@ Second Exam of the Dynamic Systems 2022-2 class, taught by [Dr. Victor de la Luz
 
  ## Requeriments
  
+ We want to draw a fractal in shape of square with lenght = 1. We draw a square of 1/3 of the lenght of the sides of the main square, on each of its sides with each iteration.
+ 
  ## Running
  
+ We have to clone the repository, creates a commit, make a pull request. The code is in the file called FractalCuadrado.
+ 
  ## Results
+ 
+ Example of a Fractal in shape of square with the coordinates of origin of the square (0,0), lenght of its sides = 1, and 4 iterations.
+ 
  [FractalCuadrado](https://user-images.githubusercontent.com/100147009/169947152-abc18677-1b63-491b-a73e-3fc3b2a45fd8.png)
  
  ## References 
