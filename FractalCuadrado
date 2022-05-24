@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+
+#author: Sofía De La Rosa chapatulita@gmail.com
+
+""" <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+
+# Create a figure divide in axis
+fig, ax = plt.subplots()
+ax.set_aspect(1)
+
+# Create a function that receives the coordinates (x,y) of the origin of a square and the lenght of its sides (l) and draw a square by joining its coordinates.
+def square(x,y,l):
+    P1x = (x + l)
+    P1y = y
+    P2x = (x + l)
+    P2y = (y - l)
+    P3x = x
+    P3y = (y - l)
+    # Two lists with x-coordinates and y-coordinates.
+    X = [x, P1x, P2x, P3x, x]
+    Y = [y, P1y, P2y, P3y, y]
+    ax.plot(X,Y)
+
+# Create a function that receives the coordinates (x,y) of the origin of a square, the lenght of its sides (l) and the number of iterations (n). 
+# Each side of the main square (the first) contains a square of 1/3 of the lenght of its sides.
+
+def Fractal(x,y,l,n):
+    if n > 0:
+        square(x,y,l)
+        l1 = l / 3
+        R1x = x + l
+        #R1y = y + l1
+        R1y = y - l1
+        Fractal(R1x,R1y,l1,n-1)
+        D1x = x + l1
+        D1y = y - l
+       # D1y = y - l1
+        Fractal(D1x,D1y,l1,n-1)
+        L1x = x - l1
+       # L1y = y + l1
+        L1y = y - l1
+        Fractal(L1x,L1y,l1,n-1)
+        U1x = x + l1
+        #U1y = y - l
+        U1y = y + l1
+        Fractal(U1x,U1y,l1,n-1)
+
+# Example
+Fractal(0,0,1,4)
+
+# Show us the graph
+plt.show()
+
