@@ -24,10 +24,12 @@ import math
 import matplotlib.pyplot as plt
 
 # Create a figure divide in axis
+
 fig, ax = plt.subplots()
 ax.set_aspect(1)
 
 # Create a function that receives the coordinates (x,y) of the origin of a square and the lenght of its sides (l) and draw a square by joining its coordinates.
+
 def square(x,y,l):
     P1x = (x + l)
     P1y = y
@@ -35,6 +37,7 @@ def square(x,y,l):
     P2y = (y - l)
     P3x = x
     P3y = (y - l)
+    
     # Two lists with x-coordinates and y-coordinates.
     X = [x, P1x, P2x, P3x, x]
     Y = [y, P1y, P2y, P3y, y]
@@ -47,22 +50,26 @@ def Fractal(x,y,l,n):
     if n > 0:
         square(x,y,l)
         l1 = l / 3
+        
+        # Right Square
         R1x = x + l
-        #R1y = y + l1
         R1y = y - l1
         Fractal(R1x,R1y,l1,n-1)
-        D1x = x + l1
-        D1y = y - l
-       # D1y = y - l1
-        Fractal(D1x,D1y,l1,n-1)
+        
+        # Bottom Square
+        B1x = x + l1
+        B1y = y - l
+        Fractal(B1x,B1y,l1,n-1)
+        
+        # Left Square
         L1x = x - l1
-       # L1y = y + l1
         L1y = y - l1
         Fractal(L1x,L1y,l1,n-1)
-        U1x = x + l1
-        #U1y = y - l
-        U1y = y + l1
-        Fractal(U1x,U1y,l1,n-1)
+        
+        # Top Square
+        T1x = x + l1
+        T1y = y + l1
+        Fractal(T1x,T1y,l1,n-1)
 
 # Example
 Fractal(0,0,1,4)
