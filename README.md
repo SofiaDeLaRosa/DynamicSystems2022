@@ -11,7 +11,7 @@ Second Exam of the Dynamic Systems 2022-2 class, taught by [Dr. Victor de la Luz
  A [fractal](https://fractalfoundation.org/resources/what-are-fractals/) is a mathematical structure that describes an infinite perimeter in a finite area.
  
  ## Metodology
- We drew a fractal in shape of square with iterations. That
+ We drew a fractal in shape of square with iterations. That is a dynamic system because it is based on iterations.
  
  Toolset:
 
