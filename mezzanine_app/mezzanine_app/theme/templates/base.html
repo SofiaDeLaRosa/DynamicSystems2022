@@ -1,0 +1,53 @@
+#<!doctype html>
+#<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
+#{% load pages_tags mezzanine_tags i18n static %}
+
+<style>
+    * {box-sizing: border-box;}
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .header {
+        overflow: hidden;
+        background-color: black;
+        padding: 20px 10px;
+    }
+    .header a {
+        float: left; 
+        color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+    .header a.logo {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .header a:hover {
+        background-color: #444;
+        color: white;
+    }   
+    .header a.active {
+        background-color: white;
+        color: black;
+    }
+    .right {
+        float: right;
+    }
+    @media screen and (max-width: 500px;) {
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        .right {
+            float: none;
+        }
+    }
+
+
+</style>
